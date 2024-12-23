@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee info</title>
+</head>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        {
+            background-color:#f2f2f2;
+        }
+    </style>
+<body>
+    <h2></h2>
+
+<h2 align="center">Employee info</h2>
+ <table border="2px">
+        <tr>
+        <th>Sr No</th>   
+        <th>Id</th>
+        <th>Name</th>
+        <th>Salary</th>
+        <th>Position</th>
+        <th>Bloood group</th>
+        <th>Age</th>
+        <th>Delete</th>
+        <th>Edit</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.salary}}</td>
+            <td>{{i.position}}</td>
+            <td>{{i.blood_g}}</td> 
+            <td>{{i.age}}</td>
+            <td><a href="/delete/{{i.id}}">Delete</a></td>
+            <td><a href="/edit/{{i.id}}">Edit</a></td>
+        </tr>
+            {% endfor %}
+
+        
+        
+</table>
+
+    
+</body>
+</html>

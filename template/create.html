@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/sty.css' %}">
+</head>
+<body>
+    <form action="#" method="POST">
+        {% csrf_token %}
+        <table>
+            <tr><th colspan="23">Employee Details</th></tr>
+
+            <div>
+                <tr>
+                    <td id="t1"><label for="inputname">Emp_Name</label></td>
+                    <td id="t2"><input type="text" id="inputname" name="ename" placeholder="Enter EMP Name"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td id="t1"><label for="inputsalary">Emp_Salary</label></td>
+                    <td id="t2"><input type="number" id="inputsalary" name="esalary" placeholder="Enter EMP Salary"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td id="t1"><label for="inputposition">Emp_Position</label></td>
+                    <td id="t2"><input type="text" id="inputposition" name="eposition" placeholder="Enter EMP Position"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td id="t1"><label for="Bloodgrp">Emp_Bloodgroup</label></td>
+
+                        <td id="t2">
+                            <select id="bloodgrp" name="ebloodgroup">Bloodgroup
+                                <option value="Select Bloodgroup">Select Bloodgroup</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                            </select>
+                        </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td id="t1"><label for="inputage">Emp_Age</label></td>
+                    <td id="t2"><input type="number" id="inputage" name="eage" placeholder="Enter EMP Age" min="18" max="100"></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+
+                    <td colspan="2" align="center"><button type="submit">Submit</button></td>
+                </tr>
+            </div>
+        </table>
+
+    </form>
+
+</body>
+</html>

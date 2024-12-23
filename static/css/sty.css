@@ -1,0 +1,65 @@
+/* style.css */
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container */
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Form Table Header */
+th {
+    border: 1px solid black;
+    height: 45px;
+    /* text-align: center;   */
+    background-color: #f2f2f2;
+}
+
+/* Form Table Cells */
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+/* Form Input Fields */
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Form Submit Button */
+button[type="submit"] {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #357934;
+}
